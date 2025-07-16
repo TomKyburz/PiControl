@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Quantize</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="header">
+        <a href="apps/"><div class="account"></div></a>
+        <h1>PiControl</h1>
+    </div>
+
+    <!-- Swiper -->
+    <section>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img onclick="alert()" src="img/pizzeria.WEBP" alt="Pizzeria">
+                </div>
+                <div class="swiper-slide">
+                    <a href="rpg/"><img src="img/burgeria.WEBP" alt="Burgeria"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="duel/"><img src="img/scooperia.WEBP" alt="Scooperia"></a>
+                </div>
+            </div>
+
+            <!-- ARROWS -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper", {
+            speed: 600,
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 1,
+            grabCursor: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="js/install.js"></script>
+</body>
+</html>
